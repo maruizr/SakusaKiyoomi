@@ -1,0 +1,91 @@
+{% extends "base_generic.html" %}
+
+    {% block content %}
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Sakusa Kiyoomi</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Nada es peor que alguien que te dice: "Pobrecito"</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Empecemos</a>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Sobre él</h2>
+                        <p class="text-white-50">Su nombre es Sakusa Kiyoomi, actualmente tiene 24 años. Nació el 20 de Marzo de 1996. 
+                            Tiene el pelo negro y ondulado y dos lunares en el lado derecho de la frente. 
+                            Además, de lo oscuro que son sus ojos, no se distingue su pupila. 
+                            Cuando no está en el juego, Sakusa usa una máscara blanca sobre su boca.
+                        </p>
+                    </div>
+                </div>
+                {% load static %}
+                <img class="img-fluid" src="{% static 'assets/img/saku.png' %}" alt="" />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    {% load static %}
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'assets/img/bg-masthead.jpg' %}" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Personalidad</h4>
+                            <p class="text-black-50 mb-0">Sakusa aparenta ser una persona calmada y serena, pero a su vez expresa competitividad. 
+                                Incluso cuando anota el punto final para un partido, no reacciona mucho, 
+                                pero cuando encuentra a un jugador que considera una amenaza para él, se concentra intensamente en dicho jugador.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    {% load static %}
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'assets/img/demo-image-01.jpg' %}" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <p class="mb-0 text-white-50">En general es descrito como un jugador precavido que puede analizar un lanzamiento antes de disparar, 
+                                        rasgo que también se manifiesta en sus hábitos diarios. Además, Sakusa afirma ser realista, lo que explica por qué hace tantas 
+                                        preguntas para poder evaluar situaciones.</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    {% load static %}
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'assets/img/demo-image-02.jpg' %}" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <p class="mb-0 text-white-50">Por otro lado, tiene como una tendencia fastidiosa la fobia a las bacterias (conocida como Misofobia), 
+                                        lo cual se ve de manera evidente cuando dijo que quería bañarse primero "antes de que alguien más contaminara el baño con sus gérmenes". 
+                                        Debido a que odia las multitudes, sería capaz de irse a una esquina trasera de la habitación o a un lugar vacío.</p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+            {% endblock %}
+        </section>
+
