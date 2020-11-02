@@ -15,3 +15,18 @@ def index(request):
         request,
         'index.html'
     )
+
+class CuriosidadCreate(CreateView):
+    model = Curiosidad
+    fields = '__all__'
+
+class CuriosidadUpdate(UpdateView):
+    model = Curiosidad
+    fields = 'description'
+
+class CuriosidadDelete(DeleteView):
+    model = Curiosidad
+    success_url = reverse_lazy('index')
+
+class CuriosidadDetailView(generic.DetailView):
+    model = Curiosidad
