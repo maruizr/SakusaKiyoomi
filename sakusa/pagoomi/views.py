@@ -16,6 +16,12 @@ def index(request):
         'index.html'
     )
 
+def galeria(request):    
+    return render(
+        request,
+        'galeria.html'
+    )
+
 class CuriosidadCreate(CreateView):
     model = Curiosidad
     fields = '__all__'

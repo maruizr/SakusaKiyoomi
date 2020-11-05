@@ -1,0 +1,162 @@
+{% extends "base_generic.html" %}
+
+    {% block content %}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        {% block title %}</title><title>Curiosidades Sakusa Kiyoomi</title>{% endblock %}
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/icon.png' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+        {% load static %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'gallery-grid.css' %}">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        {% load static %}
+        <link href="{% static 'css/styles1.css' %}" rel="stylesheet" />  
+    </head>
+
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Galeria</h1>
+                <a class="btn btn-primary js-scroll-trigger" href="#galeria">Empecemos</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-black" id="galeria">
+        <div class="container p-1 gallery-container">
+            <div class="tz-gallery">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-lg-3 col-sm-1 mt-3">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/1.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/1.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-1 mt-3">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/2.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/2.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-1 mt-3">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/3.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/3.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-1 mt-3">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/4.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/4.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/5.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/5.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/6.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/6.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/7.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/7.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/8.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/8.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/10.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/10.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/12.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/12.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/13.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/13.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/14.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/14.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/15.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/15.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/16.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/16.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/17.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/17.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 mt-4">
+                        {% load static %}
+                        <a class="lightbox" href="{% static 'assets/galeria/fullsize/18.jpg' %}">
+                            {% load static %}
+                            <img src="{% static 'assets/galeria/thumbnails/18.jpg' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+    {% endblock %}
