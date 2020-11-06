@@ -1,0 +1,71 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        {% block title %}</title><title>Curiosidades Sakusa Kiyoomi</title>{% endblock %}
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/icon.png' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Mensaje -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        {% load static %}
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/valida.css' %}" rel="stylesheet" />
+    </head>
+
+    <!-- Masthead-->
+    <header class="masthead">
+        {% if mostrar_popup == '1' %}    
+            <div class="container alert alert-success alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Formulario enviado correctamente</h4>
+                <p>Gracias por comunicarte con nosotros. Pronto te escribiremos</p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endif %}
+
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Formulario</h1>
+                <a class="btn btn-primary js-scroll-trigger" href="#formulario">Empecemos</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-section bg-black" id="formulario">
+        <div class="container font_form text-white">
+            <h1>Formulario de Recomendaciones</h1>
+            
+            <form id="formulario" action="/formulario/" method="POST">{% csrf_token %} 
+                <div class="form-group">
+                    <label> Nombre </label>
+                    <input class="form-control" required="" name="nombre" type="name" placeholder="Ingrese nombre">
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <label> Correo Electrónico</label>
+                    <input class="form-control" required="" name="email" type="email" placeholder="nombre@dominio.cl">
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <label for="comment">Recomendaciones para implementarle a la página</label>
+                    <textarea class="form-control" name="comentario" placeholder='Deje su comentario' rows="5"></textarea>
+                </div>
+                <button alert type="submit" class="btn btn-primary">Enviar</button>            
+            </form>
+        </div>
+    </section>
+
+{% endblock %}

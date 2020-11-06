@@ -5,7 +5,7 @@ import uuid
 # Create your models here.
 
 class Curiosidad(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=200)
     description = models.TextField(max_length=1000)
 
@@ -14,3 +14,9 @@ class Curiosidad(models.Model):
 
     def __str__(self):
         return self.name
+
+class Formulario(models.Model):
+    identificador = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=100)
+    email  = models.EmailField()
+    comentario = models.CharField(max_length=2000)
