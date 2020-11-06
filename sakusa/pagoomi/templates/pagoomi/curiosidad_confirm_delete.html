@@ -1,13 +1,14 @@
 {% extends "base_generic.html" %}
 
 
+<section>
+    <h1>Eliminar Curiosidad</h1>
 
-<h1>Eliminar Curiosidad</h1>
+    <p>Estas seguro de eliminar esta curiosidad?: {{Curiosidad}}</p>
 
-<p>Estas seguro de eliminar esta curiosidad?: {{Curiosidad}}</p>
-
-<form action="" method="POST">
-    {% csrf_token %}
-    <input type="submit" action="" value="Si, eliminar"/>
-</form>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" action="" value="Si, eliminar"/>
+    </form>
+</section>
 {% block content %}{% endblock %}

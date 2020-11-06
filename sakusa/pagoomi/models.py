@@ -5,8 +5,12 @@ import uuid
 # Create your models here.
 
 class Curiosidad(models.Model):
-    name = models.CharField(max_length=200, help_text="Introduzca un breve título de la curiosidad")
-    description = models.TextField(max_length=1000, help_text="Introduzca una breve descripción de la curiosidad")
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    name = models.CharField(max_length=200)
+    description = models.TextField(max_length=1000)
+
+    class Meta:
+      ordering = ['name']
 
     def __str__(self):
         return self.name
