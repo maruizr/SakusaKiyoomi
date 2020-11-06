@@ -10373,6 +10373,6 @@ body {
 }
 
 galeria-section {
-  padding: 10rem 0;
+  padding: 10rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%);
 }
