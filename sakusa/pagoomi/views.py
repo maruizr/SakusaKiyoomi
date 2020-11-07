@@ -50,6 +50,10 @@ def formulario(request):
             'formulario.html'
         )
 
+class CuriosidadListView(generic.ListView):
+    model = Curiosidad
+    paginate_by = 30
+
 class CuriosidadCreate(CreateView):
     model = Curiosidad
     fields = '__all__'
