@@ -5,15 +5,12 @@ import uuid
 # Create your models here.
 
 class Curiosidad(models.Model):
-    id = models.AutoField(primary_key=True)
+    iden = models.AutoField(primary_key=True)
     name = models.CharField(max_length=200)
     description = models.TextField(max_length=1000)
 
-    class Meta:
-      ordering = ['name']
-
-    def __str__(self):
-        return self.name
+    def get_absolute_url(self):
+	    return reverse('curiosidad_detail', args=[str(self.iden)])
 
 class Formulario(models.Model):
     identificador = models.AutoField(primary_key=True)

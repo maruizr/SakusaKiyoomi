@@ -14,11 +14,10 @@
         <div class="container font_form text-white">
             <h1>Creando Curiosidad</h1>
 
-            <form id="formulario" action ="" method="post">
+            <form id="formulario" action ="" method="POST">
                 {%csrf_token%}
                 <table>
                     {{form.as_table}}
-
                 </table>
                 <input type="submit" value ="Enviar" class="btn btn-primary">
             </form>

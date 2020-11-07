@@ -1,14 +1,28 @@
 {% extends "base_generic.html" %}
 
+{% block content %}
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Formulario</h1>
+            <a class="btn btn-primary js-scroll-trigger" href="#formulario">Empecemos</a>
+        </div>
+    </div>
+</header>
 
-<section>
-    <h1>Eliminar Curiosidad</h1>
-
-    <p>Estas seguro de eliminar esta curiosidad?: {{Curiosidad}}</p>
-
-    <form action="" method="POST">
-        {% csrf_token %}
-        <input type="submit" action="" value="Si, eliminar"/>
-    </form>
+<center>
+<section class="page-section bg-black">
+    <div class="container font_form text-white">
+        <h1>Eliminar Curiosidad</h1>
+        
+        <p>Estas seguro de eliminar esta curiosidad?: {{curiosidad.name}}</p>
+        <div class="" style="width: 50%;">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="submit" action="" class="btn btn-primary " value="Eliminar"/>
+            </form>
+        </div>
+    </div>
 </section>
-{% block content %}{% endblock %}
+</center>
+{% endblock %}

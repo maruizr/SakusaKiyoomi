@@ -1,7 +1,5 @@
 {% extends "base_generic.html" %}
 
-{% block title %}Gestión de Curiosidades{% endblock %}
-
 {% block content%}
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
@@ -12,12 +10,13 @@
         </div>
     </header>
     
-    <section>
+    <section class="page-section bg-black">
+        <div class="container font_form text-white">
         <h2>Listado de Curiosidades</h2>
         <a class="btn btn-primary" href="{% url 'curiosidad_create' %}" role="button">Nuevo Producto</a>
 
-        <div class="table-responsive">
-            <table class="table table-striped table-sm">
+        <div class="table-responsive text-white">
+            <table class="table table-striped table-sm text-white">
                 <thead>
                 <tr>
                     <th>Nombre</th>
@@ -27,13 +26,13 @@
                 <tbody>
                 {% for curiosidad in curiosidad_list %}
                 <tr>
-                    <td>{{curiosidad.codigo_curiosidad}}</td>
-                    <td>{{curiosidad.codigo_curiosidad}}</td>
-                    <td>{{curiosidad.codigo_curiosidad}}</td>
+                    <td>{{curiosidad.iden}}</td>
+                    <td>{{curiosidad.name}}</td>
+                    <td>{{curiosidad.description}}</td>
                     <td>
-                        <a class="btn btn-primary" href="{{curiosidad.codigo_curiosidad}}/update" role="button">Editar</a>
-                        <a class="btn btn-primary" href="{{curiosidad.codigo_curiosidad}}" role="button">Ver</a>
-                        <a class="btn btn-primary" href="{{curiosidad.codigo_curiosidad}}/delete" role="button">Eliminar</a>
+                        <a class="btn btn-primary" href="{{curiosidad.iden}}/update" role="button">Editar</a>
+                        <a class="btn btn-primary" href="{{curiosidad.iden}}" role="button">Ver</a>
+                        <a class="btn btn-primary" href="{{curiosidad.iden}}/delete" role="button">Eliminar</a>
                     </td>
                 </tr>
                 {% endfor %}
@@ -41,5 +40,6 @@
                 </tbody>
             </table>
             </div>
+        </div>
     </section>
 {% endblock %}

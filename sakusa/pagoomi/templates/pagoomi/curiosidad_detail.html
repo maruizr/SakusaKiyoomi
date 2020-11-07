@@ -1,9 +1,37 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Formulario</h1>
+            <a class="btn btn-primary js-scroll-trigger" href="#formulario">Empecemos</a>
+        </div>
+    </div>
+</header>
 
-<section>
-    <p>Curiosidad: {{Curiosidad.name}}</p>
-    <p>Descripcion: {{Curiosidad.description}}</p>
+<section class="page-section bg-black">
+    <div class="container font_form text-white">
+        <h2>Información de la Curiosidad</h2>
+        <div class="table-responsive text-white">
+            <table class="table table-striped table-sm text-white">
+                <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{curiosidad.iden}}</td>
+                    <td>{{curiosidad.name}}</td>
+                    <td>{{curiosidad.description}}</td>
+                </tr>
+                
+                </tbody>
+            </table>
+            </div>
+    </div>
 </section>
 {% endblock %}

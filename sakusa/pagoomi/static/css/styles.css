@@ -10371,3 +10371,7 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+.btn-xl {
+  padding: 1rem 1.75rem;
+}

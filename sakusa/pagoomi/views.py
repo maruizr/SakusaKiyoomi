@@ -56,15 +56,15 @@ class CuriosidadListView(generic.ListView):
 
 class CuriosidadCreate(CreateView):
     model = Curiosidad
-    fields = '__all__'
+    fields = ['name','description']
 
 class CuriosidadUpdate(UpdateView):
     model = Curiosidad
-    fields = 'description'
+    fields = ['name','description']
 
 class CuriosidadDelete(DeleteView):
     model = Curiosidad
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('curiosidad')
 
 class CuriosidadDetailView(generic.DetailView):
     model = Curiosidad
